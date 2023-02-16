@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import React from "react";
-import styles from "./Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import logo from './../../public/images/logo_bopha.png';
+import logo from "./../public/images/logo_bopha.png";
 
 export default function Navbar() {
   return (
@@ -25,23 +26,19 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarToggler">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                href="./index.html#home"
-              >
+              <Link className="nav-link active" aria-current="page" href="/">
                 Accueil
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="./index.html#aPropos">
+              <Link className="nav-link" href="/#aPropos">
                 A propos
               </Link>
             </li>
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="./pages/services.html"
+                href="/services"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -51,38 +48,29 @@ export default function Navbar() {
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link
-                    className="dropdown-item"
-                    href="./pages/services.html#decoration"
-                  >
+                  <Link className="dropdown-item" href="/services#decoration">
                     Evènements
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="dropdown-item"
-                    href="./pages/services.html#coursFloral"
-                  >
+                  <Link className="dropdown-item" href="/services#coursFloral">
                     Cours d'Art Floral
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="dropdown-item"
-                    href="./pages/services.html#jardin"
-                  >
+                  <Link className="dropdown-item" href="/services#jardin">
                     Conception de jardin
                   </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="./pages/galerie.html">
+              <Link className="nav-link" href="/galerie">
                 Galerie
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="./pages/contact.html">
+              <Link className="nav-link" href="/contact">
                 Contact
               </Link>
             </li>

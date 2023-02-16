@@ -1,4 +1,4 @@
-import Container from "../components/Container/Container";
+import Container from "../components/Container";
 import { Montserrat } from "@next/font/google";
 import "../styles/normalize.css";
 import "../styles/globals.css";
