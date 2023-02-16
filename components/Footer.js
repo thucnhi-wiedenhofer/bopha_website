@@ -37,7 +37,6 @@ export default function Footer() {
       <button
         type="button"
         className="button btn btn-dark"
-        data-aos="flip-right"
       >
         Voir la Galerie
         <Image src={arrow} alt="flèche" className="arrow" />
