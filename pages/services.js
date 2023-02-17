@@ -5,7 +5,7 @@ import services from "./../public/images/services/services_bg.jpg";
 import jardinage from "./../public/images/services/jardinage_mpt.jpg";
 import jardin from "./../public/images/services/garden_3.jpg";
 
-export default function service() {
+export default function Services() {
   return (
     <>
       <section id="decoration">

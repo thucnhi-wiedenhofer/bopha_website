@@ -67,7 +67,7 @@ export default function Home() {
             <div className="carousel-item">
               <Image
                 src={carousel3}
-                class="img-fluid"
+                className="img-fluid"
                 alt="conception jardin à Phnom Penh"
               />
               
@@ -130,7 +130,7 @@ export default function Home() {
   </div>
 </section>
 
-<section id="services" className="mt-5">
+<section id="servicesHome" className="mt-5">
       <div className="container">
         <div className="d-flex justify-content-between">
           <h2 data-aos="fade-left">Services</h2>

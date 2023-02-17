@@ -125,7 +125,7 @@ h2 {
   }
 }
 
-/*  CSS  Services section */
+/*  CSS  ServicesHome section */
 
 .arrow {
   margin-left: 20px;
@@ -169,7 +169,7 @@ h2 {
 }
 
 @media (max-width: 414px) {
-  #services .button,
+  #servicesHome .button,
   #galerie .button {
     display: none !important;
   }
@@ -436,4 +436,132 @@ footer button {
   }
 }
 
-/*  fin CSS services section */
+/*  fin CSS page services  */
+
+/*  CSS page contact section */
+
+#contact h1 {
+  top: -164px;
+  right: 98px;
+}
+
+#contact .container {
+  margin-bottom: 200px;
+}
+
+#contactForm {
+  background-color: #f0f0f5;
+}
+
+#contactForm .container,
+#contactDetails .container {
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#contactForm form {
+  max-width: 500px;
+}
+
+#contactForm a {
+  color: #850f9b;
+}
+
+.contact-img {
+  width: 40%;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.form-control,
+.form-select {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.details-img img {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+.social-network ul {
+  display: flex;
+}
+
+.icon img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#contactDetails a {
+  text-decoration: none;
+  color: #60636c;
+}
+
+@media (max-width: 1024px) {
+  #contact h1 {
+    top: -100px;
+    right: 70px;
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 834px) {
+  #contactForm .container {
+    width: 70%;
+    padding-left: 10%;
+    padding-top: 100px;
+  }
+
+  .contact-img,
+  .details-img {
+    display: none;
+  }
+  #contactDetails .container {
+    padding-top: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 414px) {
+  #contact h2 {
+    margin-top: 0px;
+  }
+
+  #contact .container {
+    margin-bottom: 80px;
+  }
+  #contactForm .container {
+    width: 100%;
+    padding-top: 30px;
+  }
+  #contactDetails .container {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .details-img {
+    display: block;
+  }
+  .details-img img {
+    margin-left: 0%;
+    margin-top: 20px;
+    width: 70%;
+  }
+}
+
+
