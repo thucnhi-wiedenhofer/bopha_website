@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Image from "next/image";
-import services from "./../public/images/services/services_bg.jpg";
+import wedding from "./../public/images/services/wedding_4.jpg";
 import jardinage from "./../public/images/services/jardinage_mpt.jpg";
 import jardin from "./../public/images/services/garden_3.jpg";
 
@@ -10,13 +10,12 @@ export default function Services() {
     <>
       <section id="decoration">
         <div className="container" data-aos="fade-right">
+        <div className="frame">
           <div className="services-img">
-            <Image
-              src={services}
-              alt="background foral"
-              className="img-fluid"
-            />
+            <Image src={wedding} alt="background foral" className="img-fluid" />
           </div>
+        </div>         
+          
           <div className="services-text">
             <h1 data-aos="zoom-in">Services</h1>
             <h2>Décoration florale</h2>
@@ -53,7 +52,11 @@ export default function Services() {
           </div>
 
           <div className="cours-img mt-5" data-aos="fade-left">
-            <Image src={jardinage} alt="cours de jardinage" className="img-fluid" />
+            <Image
+              src={jardinage}
+              alt="cours de jardinage"
+              className="img-fluid"
+            />
           </div>
         </div>
       </section>

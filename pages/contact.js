@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import phone from "./../public/images/icons/phone-solid.svg";
 import email from "./../public/images/icons/email.svg";
-import contact from "./../public/images/services/services_bg.jpg";
+import contact from "./../public/images/contact/contact.jpg";
 import ikebena from "./../public/images/contact/ikebena_contact.jpg";
 import naturelle from "./../public/images/contact/natur_elle.jpg";
 import facebook from "./../public/images/icons/facebook.svg";
@@ -17,6 +17,7 @@ export default function Contact() {
     <>
       <section id="contact">
         <div className="container" data-aos="fade-right">
+        <div className="frame">
           <div className="services-img">
             <Image
               src={contact}
@@ -24,6 +25,9 @@ export default function Contact() {
               className="img-fluid"
             />
           </div>
+          <div className="overlay"></div>
+        </div>
+          
           <div className="services-text">
             <h1 data-aos="zoom-in">Contact</h1>
             <h2>Contactez-nous</h2>
