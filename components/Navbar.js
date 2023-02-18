@@ -10,7 +10,12 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <Link className="navbar-brand" href="/">
-          <Image src={logo} alt="logo" width="100" height="100" />
+          <Image
+            src={logo}
+            alt="logo"
+            width="100"
+            height="100"
+          />
         </Link>
         <button
           className="navbar-toggler"

@@ -46,21 +46,21 @@ export default function Contact() {
               <fieldset>
                 <legend>N'hésitez pas à me laisser un message</legend>
                 <div className="form-group">
-                  <label for="name" className="form-label mt-4">Nom</label>
+                  <label htmlFor="name" className="form-label mt-4">Nom</label>
                   <input type="text" className="form-control" id="name" required/>
                 </div>
                 <div className="form-group">
-                  <label for="email" className="form-label mt-4">Email</label>
+                  <label htmlFor="email" className="form-label mt-4">Email</label>
                   <input type="email" className="form-control" id="email" pattern=".+@globex\.com" size="30" required/>            
                 </div>
               
                 <div className="form-group">
-                  <label for="phone" className="form-label mt-4">Numéro de téléphone</label>
+                  <label htmlFor="phone" className="form-label mt-4">Numéro de téléphone</label>
                   <input type="tel" className="form-control" id="phone" required/>
                 </div>
                 
                 <div className="form-group">
-                  <label for="select" className="form-label mt-4">Objet</label>
+                  <label htmlFor="select" className="form-label mt-4">Objet</label>
                   <select className="form-select" id="select" required>
                     <option>Demande d'informations</option>
                     <option>Demande de devis</option>              
@@ -68,14 +68,14 @@ export default function Contact() {
                 </div>
                 
                 <div className="form-group">
-                  <label for="message" className="form-label mt-4">Votre message</label>
+                  <label htmlFor="message" className="form-label mt-4">Votre message</label>
                   <textarea className="form-control" id="message" rows="3"></textarea>
                 </div>
                 
                 <fieldset className="form-group mt-5">
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="rgpdCheckbox"/>
-                    <label className="form-check-label" for="rgpdCheckbox">
+                    <label className="form-check-label" htmlFor="rgpdCheckbox">
                       J'autorise ce site à conserver mes données personnelles transmises via ce formulaire. <br/>
                       Aucune exploitation commerciale ne sera faite des données conservées. <br/>
                       <Link href="">Voir Notre politique de gestion de données</Link>

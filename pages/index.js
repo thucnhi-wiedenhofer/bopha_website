@@ -10,7 +10,9 @@ import carousel1 from "./../public/images/home/wedding_bunch.jpg";
 import carousel2 from "./../public/images/home/art_floral.jpg";
 import carousel3 from "./../public/images/home/garden.jpg";
 
-export default function Home() {
+
+export default function Home(props) {
+  console.log(props);
   return <>
   <section id="home" className="mb-5">
       <div className="container" data-aos="fade-right">
@@ -146,9 +148,22 @@ export default function Home() {
           </Link>
         </div>
         <div className="services mt-5">
-        <Card/><Card/><Card/>
+        {props.array.map((service, index) => (
+           <Card key={index} service={service}/>
+        ))}
+       
         </div>
       </div>
     </section>
     </>;
+}
+
+export async function getStaticProps(){
+  const data = await import(`/data/services.json`)
+  const array = data.services;
+  return{
+    props:{
+      array
+    }
+  }
 }

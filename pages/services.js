@@ -10,12 +10,16 @@ export default function Services() {
     <>
       <section id="decoration">
         <div className="container" data-aos="fade-right">
-        <div className="frame">
-          <div className="services-img">
-            <Image src={wedding} alt="background foral" className="img-fluid" />
+          <div className="frame">
+            <div className="services-img">
+              <Image
+                src={wedding}
+                alt="composition florale pour mariage"
+                className="img-fluid"
+              />
+            </div>
           </div>
-        </div>         
-          
+
           <div className="services-text">
             <h1 data-aos="zoom-in">Services</h1>
             <h2>Décoration florale</h2>
@@ -63,7 +67,11 @@ export default function Services() {
       <section id="jardin" className="mt-5 mb-5">
         <div className="container mt-5">
           <div className="cours-img" data-aos="fade-right">
-            <Image src={jardin} alt="jardin" className="img-fluid" />
+            <Image
+              src={jardin}
+              alt="jardin"
+              className="img-fluid"
+            />
           </div>
           <div className="jardin-text" data-aos="fade-left">
             <h2 className="mt-5">Conception de jardin</h2>
