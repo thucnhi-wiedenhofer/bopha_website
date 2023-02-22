@@ -12,7 +12,6 @@ import carousel3 from "./../public/images/home/garden.jpg";
 
 
 export default function Home(props) {
-  console.log(props);
   return <>
   <section id="home" className="mb-5">
       <div className="container" data-aos="fade-right">

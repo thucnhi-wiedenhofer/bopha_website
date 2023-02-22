@@ -10,12 +10,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <Link className="navbar-brand" href="/">
-          <Image
-            src={logo}
-            alt="logo"
-            width="100"
-            height="100"
-          />
+          <Image src={logo} alt="logo" width="100" height="100" />
         </Link>
         <button
           className="navbar-toggler"
@@ -53,7 +48,7 @@ export default function Navbar() {
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <Link className="dropdown-item" href="/services#decoration">
+                  <Link className="dropdown-item" href="/services">
                     Evènements
                   </Link>
                 </li>

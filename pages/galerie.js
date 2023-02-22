@@ -2,8 +2,8 @@ import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import arrow from "./../public/images/icons/arrow-icon.svg";
-import Card from "@/components/Card";
 import bouquetDesktop from "./../public/images/wedding_flowers.jpg";
+import GaleryCard from '@/components/GaleryCard';
 
 export default function galerie() {
   return (
@@ -22,17 +22,18 @@ export default function galerie() {
           </button>
         </div>
         <div className="services mt-5">
-        <div className="services-card mb-5" data-aos="flip-right">
-      <Link href="/services#decoration">        
-          <Image
-            className="card-img"
-            src={bouquetDesktop}
-            alt="bouquet de mariée"
-          />
-        <div className="overlay"></div>
-        <h4 className="card-title">Compostion florale</h4>
-      </Link>
-    </div>
+          <GaleryCard/><GaleryCard/>
+          <div className="services-card mb-5" data-aos="flip-right">
+            <Link href="/services#decoration">        
+                <Image
+                  className="card-img"
+                  src={bouquetDesktop}
+                  alt="bouquet de mariée"
+                />
+              <div className="overlay"></div>
+              <h4 className="card-title">Composition florale</h4>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

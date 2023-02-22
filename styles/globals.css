@@ -120,8 +120,8 @@ h2 {
   position: absolute;
   top: 500px;
   left: 40px;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 25px;
   color: white;
 }
@@ -163,6 +163,7 @@ h2 {
   }
   .card-title {
     top: 200px;
+    font-size: 16px;
   }
   #servicesHome .button,
   #galerie .button {
@@ -430,6 +431,23 @@ footer button {
 }
 
 /*  fin CSS page services  */
+
+/*  CSS page galerie section */
+
+#galerie .card-title,
+#galerie .overlay {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+
+#galerie .services-card:hover .card-title,
+#galerie .services-card:hover .overlay {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+/*  fin CSS page galerie  */
 
 /*  CSS page contact section */
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import bouquetDesktop from "./../public/images/wedding_flowers.jpg";
+
 
 export default function Card({service}) {
   return (
