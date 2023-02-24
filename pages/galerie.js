@@ -1,43 +1,43 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import arrow from "./../public/images/icons/arrow-icon.svg";
-import bouquetDesktop from "./../public/images/wedding_flowers.jpg";
-import GaleryCard from '@/components/GaleryCard';
+import GaleryCard from "@/components/GaleryCard";
+import { PrismaClient } from "@prisma/client";
 
-export default function galerie() {
+export default function galerie(props) {
   return (
-    <>    
-    <section id="galerie" className="mt-5">
-      <div className="container">
-        <div className="d-flex justify-content-between">
-          <h2>Galerie</h2>
-          <button type="button" className="button btn btn-dark" data-aos="flip-right">
-            Voir tout
-            <Image
-              src={arrow}
-              alt="arrow"
-              className="arrow"
-            />
-          </button>
-        </div>
-        <div className="services mt-5">
-          <GaleryCard/><GaleryCard/>
-          <div className="services-card mb-5" data-aos="flip-right">
-            <Link href="/services#decoration">        
-                <Image
-                  className="card-img"
-                  src={bouquetDesktop}
-                  alt="bouquet de mariée"
-                />
-              <div className="overlay"></div>
-              <h4 className="card-title">Composition florale</h4>
-            </Link>
+    <>
+      <section id="galerie" className="mt-5">
+        <div className="container">
+          <div className="d-flex justify-content-between">
+            <h2>Galerie</h2>
+            <button
+              type="button"
+              className="button btn btn-dark"
+              data-aos="flip-right"
+            >
+              Voir tout
+              <Image src={arrow} alt="arrow" className="arrow" />
+            </button>
+          </div>
+          <div className="services mt-5">
+            {props.collections.map((collection, index) => (
+              <GaleryCard key={index} collection={collection} />
+            ))}
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const prisma = new PrismaClient();
+  const collections = await prisma.galery.findMany();
+  return {
+    props: {
+      collections,
+    },
+  };
+};

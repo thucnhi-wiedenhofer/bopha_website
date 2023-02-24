@@ -1,7 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
+import ContactForm from '@/components/ContactForm';
 import phone from "./../public/images/icons/phone-solid.svg";
 import email from "./../public/images/icons/email.svg";
 import contact from "./../public/images/contact/contact.jpg";
@@ -42,49 +43,7 @@ export default function Contact() {
       <section id="contactForm" className="mt-5 pb-2" data-aos="fade-down">
         <div className="container mt-5" data-aos="fade-down">
           <div className="contact-form">
-            <form>
-              <fieldset>
-                <legend>N'hésitez pas à me laisser un message</legend>
-                <div className="form-group">
-                  <label htmlFor="name" className="form-label mt-4">Nom</label>
-                  <input type="text" className="form-control" id="name" required/>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email" className="form-label mt-4">Email</label>
-                  <input type="email" className="form-control" id="email" pattern=".+@globex\.com" size="30" required/>            
-                </div>
-              
-                <div className="form-group">
-                  <label htmlFor="phone" className="form-label mt-4">Numéro de téléphone</label>
-                  <input type="tel" className="form-control" id="phone" required/>
-                </div>
-                
-                <div className="form-group">
-                  <label htmlFor="select" className="form-label mt-4">Objet</label>
-                  <select className="form-select" id="select" required>
-                    <option>Demande d'informations</option>
-                    <option>Demande de devis</option>              
-                  </select>
-                </div>
-                
-                <div className="form-group">
-                  <label htmlFor="message" className="form-label mt-4">Votre message</label>
-                  <textarea className="form-control" id="message" rows="3"></textarea>
-                </div>
-                
-                <fieldset className="form-group mt-5">
-                  <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="rgpdCheckbox"/>
-                    <label className="form-check-label" htmlFor="rgpdCheckbox">
-                      J'autorise ce site à conserver mes données personnelles transmises via ce formulaire. <br/>
-                      Aucune exploitation commerciale ne sera faite des données conservées. <br/>
-                      <Link href="">Voir Notre politique de gestion de données</Link>
-                    </label>
-                  </div>           
-                </fieldset>                
-                <button type="submit" className="button btn btn-dark mt-5">Envoyer</button>
-              </fieldset>
-            </form>
+            <ContactForm/>
           </div>
           <div className="contact-img">            
             <Image
