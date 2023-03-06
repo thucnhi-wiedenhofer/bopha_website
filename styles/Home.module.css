@@ -2,7 +2,7 @@
 
 .container {
   max-width: 1100px !important;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 80px;
   margin-right: 10%;
   margin-left: 10%;
@@ -10,9 +10,13 @@
   flex-direction: row;
   justify-content: flex-end;
 }
-
+.welcom {
+  left: 100px;
+  top: -3vh;
+  letter-spacing: 0px;
+}
 .subtitle {
-  padding-top: 180px;
+  padding-top: 190px;
   margin-bottom: 56px;
 }
 
@@ -26,13 +30,6 @@
   max-width: 60%;
 }
 
-@media (min-width: 1609px) {
-  .welcom {
-    left: 50px;
-    top: -3vh;
-  }
-}
-
 @media (max-width: 1608px) {
   .welcom {
     left: 38px;
@@ -42,13 +39,13 @@
 
 @media (max-width: 1440px) {
   .welcom {
-    left: 100px;
+    left: 50px;
   }
 }
 
 @media (max-width: 1280px) {
   .welcom {
-    left: 90px;
+    left: 10px;
   }
 }
 
@@ -62,8 +59,9 @@
     margin-left: 10%;
   }
   .welcom {
-    top: 0vh;
-    left: 70px;
+    top: -5vh;
+    left: 20px;
+    font-size: 150px !important;
   }
 
   .subtitle {
@@ -80,6 +78,7 @@
   .welcom {
     top: 0vh;
     left: 0px;
+    font-size: 130px !important;
   }
 
   .subtitle {

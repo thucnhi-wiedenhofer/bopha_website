@@ -118,7 +118,7 @@ export default function Home(props) {
               Bienvenue
             </h1>
             <h2 className={styles.subtitle}>
-              Bienvenue chez Bopha, Désigner Floral
+              Rencontrez Bopha,<br/> Désigner Floral
             </h2>
 
             <figure className="text-center mb-5">

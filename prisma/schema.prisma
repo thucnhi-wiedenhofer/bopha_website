@@ -24,6 +24,7 @@ model Contact{
   name String
   email String
   phone String
+  select String
   message String @db.Text
   date String
 }
