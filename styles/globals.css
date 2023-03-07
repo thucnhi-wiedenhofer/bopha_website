@@ -577,3 +577,25 @@ textarea {
     width: 70%;
   }
 }
+/*  fin CSS page contact   */
+
+/*  CSS page dashboard */
+#dashboard {
+  min-height: 55vh;
+}
+
+/*  fin CSS page dashboard   */
+
+/*  CSS page Admin */
+#admin {
+  min-height: 55vh;
+}
+
+#admin .container {
+  background-color: #f0f0f5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding:50px;
+} 
+

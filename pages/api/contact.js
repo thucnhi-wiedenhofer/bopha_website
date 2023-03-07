@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 
+// Function to create data in Contact table after submit contact form
 export default async function handler(req, res) {
   const prisma = new PrismaClient();
   if (req.method === "POST") {

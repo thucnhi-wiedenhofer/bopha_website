@@ -3,17 +3,16 @@ import Link from "next/link";
 import GaleryCard from "@/components/GaleryCard";
 import { PrismaClient } from "@prisma/client";
 
-export default function galerie(props) {
+export default function Galerie({ collections }) {
   return (
     <>
       <section id="galerie" className="mt-5">
         <div className="container">
           <div className="d-flex justify-content-between">
             <h2>Galerie</h2>
-           
           </div>
           <div className="services mt-5">
-            {props.collections.map((collection, index) => (
+            {collections.map((collection, index) => (
               <GaleryCard key={index} collection={collection} />
             ))}
           </div>
