@@ -7,6 +7,7 @@ export default function Admin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(admin);
     if (admin === process.env.PASSWORD) {
       console.log("ok");
       setTimeout(() => {

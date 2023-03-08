@@ -444,6 +444,7 @@ footer button {
 #galerie .services-card:hover .overlay {
   opacity: 1;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /*  fin CSS page galerie  */
