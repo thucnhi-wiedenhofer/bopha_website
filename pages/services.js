@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Image from "next/image";
-import wedding from "./../public/images/services/wedding_4.jpg";
+import wedding from "./../public/images/services/wedding.jpg";
 import jardinage from "./../public/images/services/jardinage_mpt.jpg";
 import jardin from "./../public/images/services/garden_3.jpg";
 
