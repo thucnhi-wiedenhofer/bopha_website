@@ -27,7 +27,7 @@ export default function Galerie({ collections }) {
               aria-labelledby="modalLabel"
               aria-hidden="true"
             >
-              <div className="modal-dialog modal-fullscreen-lg-down">
+              <div className="modal-dialog modal-lg">
                 <div className="modal-content">
                   <div className="modal-header">
                     <h4 className="modal-title fs-5" id="modalLabel">
@@ -42,7 +42,7 @@ export default function Galerie({ collections }) {
                   </div>
                   <div className="modal-body">
                     <Image
-                      className="card-img"
+                      className="modal-img"
                       src={`/images/galery/${modalItem.image}`}
                       alt={modalItem.description}
                       width={modalItem.width}

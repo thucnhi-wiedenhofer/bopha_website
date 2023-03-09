@@ -31,7 +31,7 @@ export default function Contact() {
           
           <div className="services-text">
             <h1 data-aos="zoom-in">Contact</h1>
-            <h2>Contactez-nous</h2>
+            <h2>Contactez-moi</h2>
             <p className="mt-4">
               Vous préparez un évènement? <br/> Je suis à votre disposition pour toutes demandes de devis ou de
               renseignements complémentaires sur mes services. <br/>
