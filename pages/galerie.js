@@ -1,18 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import GaleryCard from "@/components/GaleryCard";
 import { PrismaClient } from "@prisma/client";
 import Image from "next/image";
 
 export default function Galerie({ collections }) {
-  useEffect(() => {
-    // Perform localStorage action
-    let modalItem = localStorage.getItem("collection");
-    if (modalItem.id === undefined) {
-      modalItem = collections[0];
-      console.log(modalItem);
-    }
-  }, []);
+  const [idImage, setIdImage] = useState("0");
+  const modalItem = collections[idImage];
 
   return (
     <>
@@ -23,7 +17,7 @@ export default function Galerie({ collections }) {
           </div>
           <div className="services mt-5">
             {collections.map((collection, index) => (
-              <GaleryCard key={index} collection={collection} />
+              <GaleryCard key={index} collection={collection} setIdImage={setIdImage} />
             ))}
             {/* Modal */}
             <div
