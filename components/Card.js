@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Card({service}) {
   return (
-
+<>
     <div className="services-card mb-5" data-aos="flip-right">
       <Link href={service.href}>        
           <Image
@@ -18,6 +18,7 @@ export default function Card({service}) {
         <h4 className="card-title">{service.title}</h4>
       </Link>
     </div>
+    </>
   );
 }
 
