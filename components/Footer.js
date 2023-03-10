@@ -31,7 +31,7 @@ export default function Footer() {
             </li>
           </ul>
         </nav>
-        <Link target="_blank" href="/contact">
+        <Link href="/contact">
           <button type="button" className="button btn btn-dark">
             Contactez-moi
             <Image src={arrow} alt="flèche" className="arrow" />

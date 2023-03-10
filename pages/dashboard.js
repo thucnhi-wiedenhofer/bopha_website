@@ -10,8 +10,14 @@ export default function Dashboard({ messages }) {
       method: "DELETE",
     });
     setTimeout(() => {
-      router.push("/admin");
-    }, 3000);
+      router.push(
+        {
+          pathname: "/dashboard",
+          query: { administred: "ok" },
+        },
+        "/dashboard"
+      );
+    }, 2000);
   }
 
   if (router.query.administred === "ok") {
