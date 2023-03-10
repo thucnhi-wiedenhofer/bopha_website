@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import GaleryCard from "@/components/GaleryCard";
 import { PrismaClient } from "@prisma/client";
 import Image from "next/image";
@@ -59,7 +58,7 @@ export default function Galerie({ collections }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const prisma = new PrismaClient();
   const collections = await prisma.galery.findMany();
   return {
