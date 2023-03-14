@@ -21,8 +21,8 @@ export default function Container({ children }) {
           content="Bopha, Décoratrice Florale - Création florale sur mesure"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://www.bopha.com" />
-        <meta property="og:image" content="http://bopha.com/bopha.png" />
+        <meta property="og:url" content="https://bopha-website.vercel.app/" />
+        <meta property="og:image" content="https://bopha-website.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbopha.ee255b61.jpg&w=1920&q=75" />
         <meta
           property="og:description"
           content="Bopha vous propose des créations florales sur mesure pour toutes les occasions et évènements. Passionnée par l'art floral, bopha donne des cours et anime des ateliers également."
