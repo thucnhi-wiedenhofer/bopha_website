@@ -31,12 +31,12 @@ export default function Footer() {
             </li>
           </ul>
         </nav>
-        <Link href="/contact">
-          <button type="button" className="button btn btn-dark">
+        <form method="get" action="/contact">
+          <button type="submit" className="button btn btn-dark">
             Contactez-moi
             <Image src={arrow} alt="flèche" className="arrow" />
           </button>
-        </Link>
+        </form>
       </div>
     </footer>
   );

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styles from "./../styles/Home.module.css";
-import Link from "next/link";
 import Image from "next/image";
 import bopha from "./../public/images/aPropos/bopha.jpg";
 import arrow from "./../public/images/icons/arrow-icon.svg";
@@ -150,16 +149,16 @@ export default function Home(props) {
         <div className="container">
           <div className="d-flex justify-content-between">
             <h2 data-aos="fade-left">Services</h2>
-            <Link target="_blank" href="/services">
+            <form method="get" action="/services">
               <button
-                type="button"
+                type="submit"
                 className="button btn btn-dark"
                 data-aos="fade-right"
               >
                 Voir tout
                 <Image src={arrow} alt="flèche" className="arrow" />
               </button>
-            </Link>
+            </form>
           </div>
           <div className="services mt-5">
             {props.array.map((service, index) => (
