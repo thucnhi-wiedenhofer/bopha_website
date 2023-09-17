@@ -15,7 +15,7 @@ export default function Card({service}) {
 
           />
         <div className="overlay"></div>
-        <h4 className="card-title">{service.title}</h4>
+        <h3 className="card-title">{service.title}</h3>
       </Link>
     </div>
     </>

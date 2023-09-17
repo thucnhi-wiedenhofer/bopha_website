@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     res.status(200).json(messageEffacé);
   } else {
     throw new Error(
-      `The HTTP ${req.method} method is not supported at this route.`
+        `The HTTP ${req.method} method is not supported at this route.`
     );
   }
 }

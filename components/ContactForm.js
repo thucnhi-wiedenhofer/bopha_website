@@ -67,11 +67,12 @@ export default function ContactForm() {
             type="text"
             className="form-control"
             name="name"
+            id="name"
             required="required"
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email" className="form-label mt-4">
+          <label htmlFor="email"  className="form-label mt-4">
             Email
           </label>
           <input
@@ -81,12 +82,13 @@ export default function ContactForm() {
             type="email"
             className="form-control"
             name="email"
+            id="email"
             required="required"
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="phone" className="form-label mt-4">
+          <label htmlFor="phone" id="phone" className="form-label mt-4">
             Numéro de téléphone
           </label>
           <input
@@ -96,6 +98,7 @@ export default function ContactForm() {
             type="tel"
             className="form-control"
             name="phone"
+            id="phone"
             required="required"
           />
         </div>
@@ -111,6 +114,7 @@ export default function ContactForm() {
             }}
             className="form-select"
             name="select"
+            id="select"
             required="required"
           >
             <option value="info">Demande d'informations</option>
@@ -128,6 +132,7 @@ export default function ContactForm() {
             }}
             className="form-control"
             name="message"
+            id="message"
             rows="3"
             required="required"
           ></textarea>
@@ -142,6 +147,8 @@ export default function ContactForm() {
               onChange={(e) => {
                 setChecked(e.target.value);
               }}
+              name="rgpdCheckbox"
+              id="rgpdCheckbox"
               required="required"
             />
             <label className="form-check-label" htmlFor="rgpdCheckbox">

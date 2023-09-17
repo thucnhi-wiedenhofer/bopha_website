@@ -30,11 +30,7 @@ export default function Navbar() {
                 Accueil
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/#aPropos">
-                A propos
-              </Link>
-            </li>
+            rfc
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"

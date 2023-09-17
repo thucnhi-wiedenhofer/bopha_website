@@ -5,7 +5,7 @@
       "href": "/services",
       "picture": {
         "src": "/images/wedding_flowers.jpg",
-        "alt": "wedding_flowers",
+        "alt": "bouquet de mariée",
         "width": 2592,
         "height": 3888
       }
@@ -15,7 +15,7 @@
       "href": "/services#coursFloral",
       "picture": {
         "src": "/images/cours.jpg",
-        "alt": "atelier d'art floral",
+        "alt": "composition d'un bouquet",
         "width": 3456,
         "height": 4608
       }
@@ -25,7 +25,7 @@
       "href": "/services#jardin",
       "picture": {
         "src": "/images/garden_4_mobile.jpg",
-        "alt": "conception de jardin",
+        "alt": "jardin",
         "width": 1221,
         "height": 942
       }
