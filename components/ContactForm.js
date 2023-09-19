@@ -88,7 +88,7 @@ export default function ContactForm() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="phone" id="phone" className="form-label mt-4">
+          <label htmlFor="phone" className="form-label mt-4">
             Numéro de téléphone
           </label>
           <input
