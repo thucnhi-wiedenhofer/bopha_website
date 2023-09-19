@@ -21,7 +21,7 @@ export default function GaleryCard({ collection, setIdImage}) {
           height={collection.height}
         />
         <div className="overlay">
-          <h4 className="card-title">{collection.titre}</h4>
+          <h3 className="card-title">{collection.titre}</h3>
         </div>
       </div>      
     </>

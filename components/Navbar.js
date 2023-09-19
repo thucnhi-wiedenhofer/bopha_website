@@ -30,7 +30,6 @@ export default function Navbar() {
                 Accueil
               </Link>
             </li>
-            rfc
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"

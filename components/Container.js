@@ -14,18 +14,21 @@ export default function Container({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Bopha vous propose des créations florales sur mesure pour toutes les occasions et évènements. Passionnée par l'art floral, bopha donne des cours et anime des ateliers également."
+          content="Bopha Serre, fleuriste depuis plus de trente ans, vous propose des créations florales sur mesure pour toutes les occasions et évènements. Passionnée par l'art floral, Bopha donne des cours et anime des ateliers également sur Paris."
         />
         <meta
           property="og:title"
-          content="Bopha, Décoratrice Florale - Création florale sur mesure"
+          content="Bopha Serre, Décoratrice Florale - Création florale sur mesure"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bopha-website.vercel.app/" />
-        <meta property="og:image" content="https://bopha-website.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbopha.ee255b61.jpg&w=1920&q=75" />
+        <meta property="og:url" content="https://bopha.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://backoffice.lepetitjournal.com/sites/default/files/bopha_serre_cambodge.jpg"
+        />
         <meta
           property="og:description"
-          content="Bopha vous propose des créations florales sur mesure pour toutes les occasions et évènements. Passionnée par l'art floral, bopha donne des cours et anime des ateliers également."
+          content="Bopha Serre, fleuriste depuis plus de trente ans, vous propose des créations florales sur mesure pour toutes les occasions et évènements. Passionnée par l'art floral, Bopha donne des cours et anime des ateliers sur Paris également."
         />
         <title>Bopha, Décoratrice Florale - Création florale sur mesure</title>
       </Head>
